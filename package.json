@@ -1,0 +1,24 @@
+{
+  "name": "special-event",
+  "version": "0.0.1",
+  "description": "A little function to track special events.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pkoskela/special-event"
+  },
+  "keywords": [
+  ],
+  "dependencies": {
+    "underscore": "1.6.0",
+    "gaussian": "0.1.0"
+  },
+  "author": {
+    "name": "Pauli Koskelainen",
+    "url": "https://github.com/pkoskela"
+  },
+  "homepage": "https://github.com/pkoskela/special-event"
+}
