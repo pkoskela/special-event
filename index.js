@@ -30,14 +30,18 @@ module.exports = function(preferred_interval, cb) {
    var y = _.map(x, function(v){return v[1];});
    var mean = _.reduce(y, function(a, b) { return a + b; }, 0)/_.size(y);
    var variance = _.reduce(y, function(a,b){ return a + b*b; }, 0)/_.size(y) - Math.pow(_.reduce(y, function(a, b) { return a + b; }, 0)/_.size(y), 2);
-   var X = gaussian(mean, variance);
 
-   var ifix = 1 / (preferred_interval/avg_interval(x));
-   var tfix = (+new Date() - last_success) / preferred_interval;
-
-   if (val > X.ppf(1.0 - ifix*tfix))
+   if (variance > 0)
    {
-    success(val);
+    var X = gaussian(mean, variance);
+
+    var ifix = 1 / (preferred_interval/avg_interval(x));
+    var tfix = (+new Date() - last_success) / preferred_interval;
+
+    if (val > X.ppf(1.0 - ifix*tfix))
+    {
+     success(val);
+    }
    }
   }
 
