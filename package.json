@@ -10,15 +10,14 @@
     "type": "git",
     "url": "https://github.com/pkoskela/special-event"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "dependencies": {
     "underscore": "1.6.0",
     "gaussian": "0.1.0"
   },
-  "author": {
-    "name": "Pauli Koskelainen",
-    "url": "https://github.com/pkoskela"
-  },
-  "homepage": "https://github.com/pkoskela/special-event"
+  "author": "Pauli Koskelainen (https://github.com/pkoskela)",
+  "homepage": "https://github.com/pkoskela/special-event",
+  "readmeFilename": "README.md",
+  "gitHead": "5279434c031a01c414eca620c8a8af15fc47a7d4",
+  "license": "BSD"
 }
